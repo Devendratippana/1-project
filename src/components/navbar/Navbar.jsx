@@ -1,14 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./navbar.css"
 
 const Navbar = () => {
-    const [isMenuClick,setisMenuClick] = useState(false)
-    const viewlist = ()=>{
-        setisMenuClick(!isMenuClick)
-    }
-    console.log(isMenuClick);
-    
-    const addClass= isMenuClick ? "": "hide"
   return (
     <>
     <div className='nav-bar'>
@@ -21,9 +14,6 @@ const Navbar = () => {
             </div>
         </div>
         <div className="img-section">
-            <div className='menu-section' onClick={viewlist}> 
-                <img className='menu' src="/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-bar"/>
-            </div>
             <div className='list-items'>
                 <li>MENU</li>
                 <li>ABOUT</li>
@@ -37,12 +27,6 @@ const Navbar = () => {
             </div>
         </div>      
     </div>
-     <div className={`menu-list ${addClass}`} >
-                <li>MENU</li>
-                <li>ABOUT</li>
-                <li>SERVICES</li>
-                <li>RATINGS</li>
-            </div>
     </>
    
   )

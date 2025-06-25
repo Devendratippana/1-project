@@ -30,11 +30,12 @@
 button{
     border: none;
     color: aliceblue;
-    background-color: #9B5278;
+    background-color: #04bf2f;
     padding: 6px;
+    margin: 5px;
     height:50px;
     width: 100px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .list-items{
     display: none;
@@ -80,6 +81,7 @@ button:hover{
     .list-items li{
         padding-right: 30px;
         padding-top: 10px;
+        margin: 5px;
     }
     .list-items li:hover{
     color:#9B5278;

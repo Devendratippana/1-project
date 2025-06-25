@@ -4,17 +4,19 @@ import './ToggleSwitch.css';
 const ToggleSwitch = () => {
   const [isOn, setIsOn] = useState(false);
 
-   const toggleHandler = () => {
+  const toggleHandler = () => {
     const newValue = !isOn;
     setIsOn(newValue);
     console.log(`Toggle is now ${newValue ? 'ON' : 'OFF'}`);
 
-    // Only scroll when switched to ON
+    // Start delayed navigation ONLY if turning ON
     if (newValue) {
-      const formElement = document.getElementById('form-element');
-      if (formElement) {
-        formElement.scrollIntoView({ behavior: 'smooth' },1000);
-      }
+      setTimeout(() => {
+        const formElement = document.getElementById('form-element');
+        if (formElement) {
+          formElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 2000); // Delay scroll by 3 seconds (3000ms)
     }
   };
 
