@@ -16,7 +16,7 @@ const ToggleSwitch = () => {
         if (formElement) {
           formElement.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 2000); // Delay scroll by 3 seconds (3000ms)
+      }, 1000); // Delay scroll by 3 seconds (3000ms)
     }
   };
 

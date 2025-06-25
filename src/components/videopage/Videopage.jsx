@@ -1,7 +1,8 @@
 import React from 'react'
 import './videopage.css'
-import ResponsiveVideo from '../../Responsive'
+
 import ToggleSwitch from '../toggle/toggle'
+import VidalyticsEmbed from '../../emdedVideo'
 
 const Videopage = () => {
   return (
@@ -55,7 +56,7 @@ const Videopage = () => {
                 <br />
             </div>
             <div className='video-item'>
-            <ResponsiveVideo/>
+            <VidalyticsEmbed/>
             <br />
             <div className='toggle-btn'>
                 <br />
