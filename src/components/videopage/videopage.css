@@ -1,0 +1,90 @@
+.video-container{
+background: #afccc1;
+background: radial-gradient(circle, rgba(175, 204, 193, 1) 0%, rgba(28, 201, 86, 1) 100%);
+padding-top: 30px;
+padding-left: 10px;
+padding-bottom: 20px;
+padding-right: 10px;
+}
+.reviews{
+    display: none;
+}
+.ai-img{
+    height: 180px;
+    border-radius: 30px;
+}
+.image-container{
+    text-align: center;
+}
+.title-container h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(13, 1, 1);
+}
+.title-container p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(8, 1, 1);
+}
+.toggle-item{
+    display: flex;
+    justify-content: center;
+}
+.toggle-btn h3{
+    text-align: center;
+}
+@media  (min-width:900px) {
+    .video-container{
+        padding-left: 300px;
+        padding-right: 300px;
+        display: flex;
+    }
+    .image-container{
+        text-align: center;
+        padding: 50px;
+    }
+    .video-item{
+        height: 600px;
+        width: 600px;
+    }
+    .title-container h1{
+        font-size: 45px ;
+        text-align: left;
+    }
+    .title-container p{
+        text-align: left;
+        font-size: 18px;
+    }
+    .right-part{
+        padding-left: 150px;
+    }
+    .reviews{
+        display: block;
+    }
+    .img{
+        height: 60px;
+        border-radius: 30px;
+        border: 2px solid white;
+    }
+    span{
+        color: rgb(139, 139, 1);
+        font-size: 20px;
+    }
+    .reviews p{
+        font-size: 12px;
+    }
+    .reviews h1{
+        font-size: 17px;
+    }
+    .review-card{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .star{
+        height: 20px;
+    }
+    .stars-container{
+        padding-left: 15px;
+    }
+}

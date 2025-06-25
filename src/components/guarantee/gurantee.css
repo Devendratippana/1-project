@@ -1,0 +1,32 @@
+.gurantee-container{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: rgb(238, 240, 240);
+}
+.gurantee-container h1{
+    color: rgb(71, 214, 71);
+    font-size: 30px;
+    font-weight: 800;
+}
+.gurantee-container p{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.gurantee-container img{
+    height: 200px;
+    
+}
+
+@media (min-width:900px) {
+    .gurantee-container{
+        padding-left: 230px;
+        padding-right: 230px;
+    }
+    .gurantee-container p{
+        padding-top: 30px;
+    }
+    
+}

@@ -1,0 +1,70 @@
+.footer-section{
+    background: #afccc1;
+background: radial-gradient(circle, rgba(175, 204, 193, 1) 0%, rgba(28, 201, 86, 1) 100%);
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 20px;
+padding-top: 10px;
+}
+.legal{
+    display: none;
+}
+.support{
+    display: none;
+}
+.logo{
+    display: flex;
+}
+.terms{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+hr{
+    background-color: black;
+    margin-top: 10px;
+}
+.bottom-part{
+    padding-top: 10px;
+}
+.bottom-part p:hover{
+    color:#d0619a ;
+    cursor: pointer;
+
+}
+
+@media (min-width:900px) {
+    .top-part{
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo .text{
+        padding-top:30px;
+
+    }
+    .legal{
+        display: block;
+        text-align: center;
+    }
+    .support{
+        display: block;
+        text-align: center;
+    }
+    .legal p{
+        text-align: left;
+    }
+    .support p{
+        text-align: left;
+    }
+    .legal p:hover{
+        color: #d0619a;
+        cursor: pointer;
+    }
+    .support p:hover{
+        color: #d0619a;
+        cursor: pointer;
+    }
+    .rights{
+        text-align: center;
+    }
+}
