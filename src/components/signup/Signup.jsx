@@ -18,11 +18,13 @@ No Card Details Required</div>
     <div className='second-fold'>
         <div className='form-container'>
             <form className='input-form'>
-                <label htmlFor='name'>Enter Your First name:</label>
+                <h1>Welcome</h1>
+                <br />
+                <label htmlFor='name'>First name:</label>
                 <input type="text" id="name" placeholder='First Name'/> <br />
-                <label htmlFor='last-name'>Enter your Last name:</label>
+                <label htmlFor='last-name'>Last name:</label>
                 <input type="text" id="last-name" placeholder='Last Name'/> <br />
-                <label htmlFor='email'>email-id</label>
+                <label htmlFor='email'>email-id:</label>
                 <input type="email" id="email" placeholder='Email Address'/> <br />
                 <label htmlFor='ph-number'>phone Number:</label>
                 <input type="text" id="ph-number" placeholder='Phone Number'/> <br />
@@ -32,11 +34,11 @@ No Card Details Required</div>
             </form>
         </div>
         <div className='about-us '>
-          <h3>ABOUT US</h3>
-         <p> About AI Wealth Profit
+          <h2>ABOUT US</h2>
+         <h4> 
 AI Wealth Profit is a cutting-edge platform designed to help individuals and businesses grow their financial potential using the power of artificial intelligence. By combining advanced data analytics, predictive modeling, and smart automation, we make wealth-building smarter, faster, and more accessible.
 
-Whether you're a beginner exploring investment opportunities or a seasoned entrepreneur looking to optimize your income streams, AI Wealth Profit offers intelligent solutions tailored to your financial goals. Our AI algorithms analyze market trends, forecast opportunities, and suggest personalized strategies to help you maximize returns with minimal effort.</p>
+Whether you're a beginner exploring investment opportunities or a seasoned entrepreneur looking to optimize your income streams, AI Wealth Profit offers intelligent solutions tailored to your financial goals. Our AI algorithms analyze market trends, forecast opportunities, and suggest personalized strategies to help you maximize returns with minimal effort.</h4>
 <div className='button-element'>
   <button> Contact Us</button>
 </div>

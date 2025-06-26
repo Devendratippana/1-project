@@ -3,11 +3,17 @@ background: #afccc1;
 background: radial-gradient(circle, rgba(175, 204, 193, 1) 0%, rgba(28, 201, 86, 1) 100%);
 padding-top: 30px;
 padding-left: 10px;
-padding-bottom: 20px;
+padding-bottom: 30px;
 padding-right: 10px;
 }
 .reviews{
     display: none;
+}
+.title-container h1{
+    font-size: 50px;
+}
+.title-container h3{
+    font-size: 20px;
 }
 .ai-img{
     height: 180px;
@@ -39,6 +45,14 @@ padding-right: 10px;
         padding-left: 300px;
         padding-right: 300px;
         display: flex;
+        height: 100vh;
+        padding-bottom: 50px;
+    }
+    .title-container h1{
+        font-size: 30px;
+    }
+    .image-container h3{
+        font-size: 30px;
     }
     .image-container{
         text-align: center;

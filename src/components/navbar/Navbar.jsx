@@ -14,15 +14,9 @@ const Navbar = () => {
             </div>
         </div>
         <div className="img-section">
-            <div className='list-items'>
-                <li>MENU</li>
-                <li>ABOUT</li>
-                <li>SERVICES</li>
-                <li>RATINGS</li>
-            </div>
             <div>
                 <button>
-                    join us
+                    join us Today
                 </button>
             </div>
         </div>      

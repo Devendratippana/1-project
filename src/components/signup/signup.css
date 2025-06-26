@@ -1,7 +1,12 @@
-
+.sign-up-container{
+    background: #5264d9;
+background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168, 0.68) 100%);
+padding-bottom: 30px;
+}
 
 .form-container{
 margin-left: 10px;
+padding-left: 10px;
 }
 .arrow-text{
     background-color: #9B5278;
@@ -30,12 +35,11 @@ margin-left: 10px;
     fill: #9B5278;
 }
 .input-form{
-    border: 1px solid white;
-    height: 350px;
+    background-color: white;
     margin-top: 40px;
-    margin-left: 20px;
     padding-right: 30px;
     margin-right: 20px;
+    padding-left: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
     box-shadow: 3px 3px 3px 3px gray;
@@ -44,8 +48,9 @@ margin-left: 10px;
 .input-form input{
     background-color: transparent;
     color:black;
+    border: none;
+    border-bottom: 1px solid black ;
     margin-bottom: 5px;
-    border: 1px solid black;
     margin-left: 10px;
     height: 30px;
     width: 100%;
@@ -53,8 +58,16 @@ margin-left: 10px;
 
 input::placeholder{
     color:black;
+    font-size: 12px;
     opacity: 1;
     padding-left: 5px;
+}
+input::placeholder:hover{
+    margin-bottom: 2px;
+    color: gray;
+}
+input:hover{
+    border: none;
 }
 label{
     margin-left: 10px;
@@ -65,18 +78,32 @@ label{
     color:white;
 }
 .signup-btn{
-    width: auto;
+    width: 100%;
     padding-top: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    background: #5264d9;
+background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168, 0.68) 100%);
 
 }
 .btn-el{
     display: flex;
     justify-content: center;
 }
-.about-us{
-    display: none;
-}
+
+.about-us h2{
+        text-align: center;
+        font-size: 30px;
+        color:rgb(71, 214, 71);
+        font-weight: 900;
+    }
+    .about-us h4{
+        text-align: justify;
+        text-justify: inter-word;
+        color: rgb(197, 194, 194);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 @keyframes appear {
     from{
@@ -111,8 +138,12 @@ label{
         padding-right: 50px;
         border: none;
     }
+    .input-form h1{
+        text-align: center;
+    }
     .arrow-text{
         height: 50px;
+        padding-top: 20px;
     }  
     .input-form button{
         margin-top: 20px;
@@ -123,11 +154,11 @@ label{
     .about-us{
         display: block;
         padding-left: 150px;
-        padding-right: 350px;
+        padding-right: 200px;
         text-align: left;
         padding-top: 30px;
-        font-size: 18px;
         font-weight: 500;
+
     }
     .button-element{
         display: flex;
@@ -135,15 +166,18 @@ label{
         padding-top: 10px;
         margin-bottom: 10px;
     }
-    .about-us h3{
+    .about-us h2{
         text-align: center;
         font-size: 30px;
         color:rgb(71, 214, 71);
         font-weight: 900;
     }
-    .about-us p{
-        text-align: left;
+    .about-us h4{
+        text-align: justify;
+        text-justify: inter-word;
+        color: rgb(197, 194, 194);
         padding-top: 20px;
+        font-size: 23px;
     }
     
 }

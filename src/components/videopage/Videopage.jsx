@@ -50,9 +50,9 @@ const Videopage = () => {
         <div className='right-part'>
             <div className='title-container'>
                 <br />
-                <h2>Transform Your Future With AI-Powered Income</h2>
+                <h1>Transform Your Future With AI-Powered Income</h1>
                 <br />
-                <p>join thousands who are already using AI to create reliable income streams</p>
+                <h3>join thousands who are already using AI to create reliable income streams</h3>
                 <br />
             </div>
             <div className='video-item'>
@@ -60,7 +60,7 @@ const Videopage = () => {
             <br />
             <div className='toggle-btn'>
                 <br />
-                <h3>Click to Turn on The AI Machine &#128071;</h3>
+                <h3>Switch on The AI Machine &#128071;</h3>
                 <br />
                 <div className='toggle-item'><ToggleSwitch/></div>
                 </div>
