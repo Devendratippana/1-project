@@ -58,7 +58,6 @@ const ResponsiveVideo = () => {
         style={{ width: '100%', borderRadius: '8px', display: 'block' }}
       >
         <source src="/The Future of Artificial Intelligence (Animated).mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       {/* Unmute overlay (initial only) */}
