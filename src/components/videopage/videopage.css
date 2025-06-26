@@ -9,11 +9,9 @@ padding-right: 10px;
 .reviews{
     display: none;
 }
-.title-container h1{
-    font-size: 50px;
-}
-.title-container h3{
-    font-size: 20px;
+.title{
+    font-size: 27px;
+    text-align: center;
 }
 .ai-img{
     height: 180px;
