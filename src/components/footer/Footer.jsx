@@ -9,7 +9,7 @@ const Footer = () => {
                 <img src="/memory_80dp_9B5278_FILL0_wght400_GRAD0_opsz48.svg" alt="logo" />
                 <div className='text'>
                     <h3>AI Wealth Profit</h3>
-                    <p>Automatical income Generation</p>
+                    <p className='text-p'>Automatical income Generation</p>
                 </div>
             </div>
             <div className='legal'>

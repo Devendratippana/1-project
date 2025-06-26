@@ -19,8 +19,9 @@ p{
     margin-top: 20px;
     height: 180px;
     width:180px;
-    margin-left: 30px;
+    margin-left: 10px;
     border-radius: 90px;
+    border: 1.6px solid  #d0619a ;
 }
 .success-container{
     padding-top: 30px;
@@ -30,13 +31,7 @@ p{
     padding-bottom:50px ;
 }
 
-.success-card{
-    transition: 1s;
-}
-.success-card:hover{
-    transform: scale(1.3);
-    z-index:2;
-}
+
 
 @media (min-width:900px) {
     .review-container{
@@ -44,12 +39,25 @@ p{
 }
 .success-container{
     padding-top: 30px;
-    padding-left: 250px;
+    padding-left: 200px;
     padding-right: 300px;
     text-align: center;
 }
 .helen{
     display: block;
+}
+.success-card{
+    transition: 1s;
+}
+.success-card:hover{
+    transform: scale(1.1);
+    z-index:1;
+}
+.review-container p {
+     color: rgb(71, 214, 71);
+}
+.review-container img {
+    margin-left: 30px;
 }
     
 }

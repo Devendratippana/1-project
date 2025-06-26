@@ -18,11 +18,15 @@ No Card Details Required</div>
     <div className='second-fold'>
         <div className='form-container'>
             <form className='input-form'>
-                <input type="text" placeholder='First Name'/> <br />
-                <input type="text" placeholder='Last Name'/> <br />
-                <input type="email" placeholder='Email Address'/> <br />
-                <input type="text" placeholder='Phone Number'/> <br />
-                <div>
+                <label htmlFor='name'>Enter Your First name:</label>
+                <input type="text" id="name" placeholder='First Name'/> <br />
+                <label htmlFor='last-name'>Enter your Last name:</label>
+                <input type="text" id="last-name" placeholder='Last Name'/> <br />
+                <label htmlFor='email'>email-id</label>
+                <input type="email" id="email" placeholder='Email Address'/> <br />
+                <label htmlFor='ph-number'>phone Number:</label>
+                <input type="text" id="ph-number" placeholder='Phone Number'/> <br />
+                <div className='btn-el'>
                 <button className='signup-btn' type="submit">START NOW</button>
                 </div>
             </form>

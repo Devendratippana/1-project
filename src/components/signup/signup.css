@@ -1,9 +1,6 @@
-.signup-container{
-    background-color: rgb(179, 181, 181);
-}
+
 
 .form-container{
-text-align: center;
 margin-left: 10px;
 }
 .arrow-text{
@@ -34,31 +31,34 @@ margin-left: 10px;
 }
 .input-form{
     border: 1px solid white;
-    background: #afccc1;
-background: radial-gradient(circle, rgba(175, 204, 193, 1) 0%, rgba(28, 201, 86, 1) 100%);
     height: 350px;
     margin-top: 40px;
     margin-left: 20px;
-    border-radius: 10px;
     padding-right: 30px;
     margin-right: 20px;
     padding-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px 3px gray;
+
 }
 .input-form input{
     background-color: transparent;
     color:black;
     margin-bottom: 5px;
     border: 1px solid black;
-    border-radius:10px;
-    margin-top: 20px;
     margin-left: 10px;
-    height: 40px;
+    height: 30px;
     width: 100%;
 }
+
 input::placeholder{
     color:black;
     opacity: 1;
     padding-left: 5px;
+}
+label{
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .input-form p{
@@ -66,10 +66,13 @@ input::placeholder{
 }
 .signup-btn{
     width: auto;
-    background-color: blue;
     padding-top: 10px;
     margin-bottom: 20px;
 
+}
+.btn-el{
+    display: flex;
+    justify-content: center;
 }
 .about-us{
     display: none;
@@ -90,7 +93,7 @@ input::placeholder{
 .input-form{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 60%;
+    animation-range: entry 10% cover 50%;
     animation-delay: 1s;
     animation-duration: 5s;
     transform: 1s;
@@ -137,6 +140,10 @@ input::placeholder{
         font-size: 30px;
         color:rgb(71, 214, 71);
         font-weight: 900;
+    }
+    .about-us p{
+        text-align: left;
+        padding-top: 20px;
     }
     
 }

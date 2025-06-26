@@ -6,8 +6,8 @@ const faqs = [
   { question: "What is the AI Profit Machine?", answer: "The AI Profit Machine is our flagship automated income system. Powered by Quantum Super Computers and proprietary AI algorithms, it identifies profitable opportunities, executes tasks, and automates online business processes to help you generate consistent daily income." },
   { question: " How does the AI Profit Machine generate income automatically?", answer: "Identify profitable niches or trends in real time Create and manage digital assets (like websites, content, or campaigns) Automate tasks such as content creation, email marketing, and customer interactions Run scalable profit-generating systems 24/7" },
   { question: "How soon can I start making money?", answer: "Many of our users see results within the first few days. However, results vary depending on your chosen system, effort, and how actively you implement our strategies" },
-  { question: ". Is this a passive income system?", answer: "Yes, our systems are designed to automate up to 90–100% of operations. While some initial setup and occasional management may be needed, most users experience a hands-free or semi-passive income experience." },
-  { question: "s this legal and ethical?", answer: "Absolutely. All our automation strategies follow legal, white-hat practices. " }
+  { question: "Is this a passive income system?", answer: "Yes, our systems are designed to automate up to 90–100% of operations. While some initial setup and occasional management may be needed, most users experience a hands-free or semi-passive income experience." },
+  { question: "Is this legal and ethical?", answer: "Absolutely. All our automation strategies follow legal, white-hat practices. " }
 ];
 
 const FAQSection = () => {
