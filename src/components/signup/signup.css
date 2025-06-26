@@ -42,6 +42,7 @@ padding-left: 10px;
     padding-left: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
     box-shadow: 3px 3px 3px 3px gray;
 
 }
@@ -90,22 +91,33 @@ background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168
     display: flex;
     justify-content: center;
 }
+.button-element{
+    display: flex;
+    justify-content: center;
+}
 
 .about-us h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         color:rgb(71, 214, 71);
         font-weight: 900;
+        padding-bottom: 30px;
     }
     .about-us h4{
         text-align: justify;
         text-justify: inter-word;
-        color: rgb(197, 194, 194);
+        color:white;
+        font-size: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
+    .button-element button{
+        background: #5264d9;
+background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168, 0.68) 100%);
+width: 200px;
+    }
 
-@keyframes appear {
+/* @keyframes appear {
     from{
         opacity: 0;
         scale:0.5;
@@ -124,7 +136,7 @@ background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168
     animation-delay: 1s;
     animation-duration: 5s;
     transform: 1s;
-}
+} */
 @media (min-width:900px) {
     .form-container{
         display: flex;
@@ -175,9 +187,13 @@ background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168
     .about-us h4{
         text-align: justify;
         text-justify: inter-word;
-        color: rgb(197, 194, 194);
         padding-top: 20px;
-        font-size: 23px;
+        font-size: 24px;
+    }
+    .button-element button{
+        background: #5264d9;
+background: linear-gradient(273deg, rgba(82, 100, 217, 1) 17%, rgba(222, 60, 168, 0.68) 100%);
+width: 200px;
     }
     
 }

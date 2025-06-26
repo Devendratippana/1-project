@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FaPlay, FaPause, FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
+import { FaPlay } from 'react-icons/fa'; // npm install react-icons
 
 const ResponsiveVideo = () => {
   const videoRef = useRef(null);
   const [showUnmuteOverlay, setShowUnmuteOverlay] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
-  const [showControls, setShowControls] = useState(false);
+  const [showControls,setShowControls] = useState(false)
+  const [isPaused, setIsPaused] = useState(false);
+  
 
   useEffect(() => {
     const video = videoRef.current;
@@ -16,41 +16,37 @@ const ResponsiveVideo = () => {
       video.playsInline = true;
       video.load();
       video.play().catch((err) => console.warn('Autoplay failed:', err));
+
+      // Listen for pause/play events
+      const handlePause = () => setIsPaused(true);
+      const handlePlay = () => setIsPaused(false);
+
+      video.addEventListener('pause', handlePause);
+      video.addEventListener('play', handlePlay);
+
+      return () => {
+        video.removeEventListener('pause', handlePause);
+        video.removeEventListener('play', handlePlay);
+      };
     }
   }, []);
 
   const handleUnmute = () => {
     const video = videoRef.current;
     if (video) {
-      video.currentTime = 0;
       video.muted = false;
       video.volume = 1;
+       video.currentTime = 0;
       video.play();
-      setIsMuted(false);
-      setIsPlaying(true);
     }
     setShowUnmuteOverlay(false);
-    setShowControls(true);
+    setShowControls(true)
   };
 
-  const togglePlayPause = () => {
+  const handlePlayClick = () => {
     const video = videoRef.current;
-    if (video) {
-      if (video.paused) {
-        video.play();
-        setIsPlaying(true);
-      } else {
-        video.pause();
-        setIsPlaying(false);
-      }
-    }
-  };
-
-  const toggleMute = () => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = !video.muted;
-      setIsMuted(video.muted);
+    if (video.paused) {
+      video.play();
     }
   };
 
@@ -58,13 +54,14 @@ const ResponsiveVideo = () => {
     <div style={{ position: 'relative', width: '100%', maxWidth: '720px', margin: 'auto' }}>
       <video
         ref={videoRef}
+        controls = {showControls}
         style={{ width: '100%', borderRadius: '8px', display: 'block' }}
       >
         <source src="/The Future of Artificial Intelligence (Animated).mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Unmute overlay */}
+      {/* Unmute overlay (initial only) */}
       {showUnmuteOverlay && (
         <div
           onClick={handleUnmute}
@@ -82,35 +79,33 @@ const ResponsiveVideo = () => {
             zIndex: 10,
           }}
         >
-          <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>Video has started</div>
-          <img src="/volume_off_32dp_EFEFEF_FILL0_wght400_GRAD0_opsz40.svg" alt="Unmute" />
+            <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>video has started </div>
+         <img src="/volume_off_32dp_EFEFEF_FILL0_wght400_GRAD0_opsz40.svg"/>
           <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>Click To Unmute</div>
         </div>
       )}
 
-      {/* Custom controls */}
-      {showControls && (
+      {/* Play overlay on pause */}
+      {isPaused && !showUnmuteOverlay && (
         <div
+          onClick={handlePlayClick}
           style={{
             position: 'absolute',
-            bottom: '20px',
+            top: '50%',
             left: '50%',
-            transform: 'translateX(-50%)',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(54, 12, 243, 0.8)', // blue
+            borderRadius: '50%',
+            width: '70px',
+            height: '70px',
             display: 'flex',
-            gap: '20px',
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
-            padding: '10px 20px',
-            borderRadius: '30px',
             alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
             zIndex: 10,
           }}
         >
-          <button onClick={togglePlayPause} style={{ background: 'none', border: 'none', color: '#fff' }}>
-            {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} />}
-          </button>
-          <button onClick={toggleMute} style={{ background: 'none', border: 'none', color: '#fff' }}>
-            {isMuted ? <FaVolumeMute size={20} /> : <FaVolumeUp size={20} />}
-          </button>
+          <FaPlay color="white" size={24} style={{ marginLeft: '5px',  }} />
         </div>
       )}
     </div>
