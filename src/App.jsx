@@ -13,9 +13,9 @@ function App() {
       <div>
         <Navbar/>
         <Videopage/>
-        <Signup/>
         <Gurantee/>
         <FAQSection/>
+        <Signup/>
         <Reviews/>
         <Footer/>
       </div>

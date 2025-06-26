@@ -50,9 +50,10 @@ const Videopage = () => {
         <div className='right-part'>
             <div className='title-container'>
                 <br />
-                <h1>Transform Your Future With AI-Powered Income</h1>
+                <h1>Making Money On Autopilot 🤯 <br />
+Machine Works For You</h1>
                 <br />
-                <h3>join thousands who are already using AI to create reliable income streams</h3>
+                <p>AI Machines Are Unlocking Effortless  Income Like Never Before. With Just a Few Clicks, Everyday People Are Tapping Into Powerful AI Tool that Generates Profit 24x7.</p>
                 <br />
             </div>
             <div className='video-item'>
